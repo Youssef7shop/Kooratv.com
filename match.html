@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بث مباشر - koora TV</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<!-- ربط ملف CSS -->
+<link rel="stylesheet" href="match.css">
+
+<div class="topbar">
+  <a href="" id="top-link-1">البث الرئيسي</a>
+  <a href="https://kooratv-1.vercel.app" id="top-link-2">koora TV</a>
+</div>
+
+<div class="page-wrap">
+  <div class="match-title">
+    <h1 id="match-main-title">⚽ بث مباشر للمباراة</h1>
+    <p>اختر السيرفر المناسب للمشاهدة</p>
+  </div>
+  <div style="text-align:center">
+    <span class="live-badge"><span class="live-dot"></span>LIVE — مباشر</span>
+  </div>
+  <div class="server-buttons">
+    <button class="refresh-mini-btn" onclick="refreshPage()">
+      <svg id="refresh-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>
+      </svg>
+      تحديث البث
+    </button>
+    <button class="server-btn active" onclick="switchServer(1)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>سيرفر 1
+    </button>
+    <button class="server-btn" onclick="switchServer(2)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>سيرفر 2
+    </button>
+    <button class="server-btn" onclick="switchServer(3)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>سيرفر 3
+    </button>
+  </div>
+
+  <!-- WhatsApp Channel Banner -->
+  <div class="wa-banner">
+    <div class="wa-banner-left">
+      <div class="wa-icon">
+        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </div>
+      <div class="wa-text">
+        <h3>📢 انضم لقناة koora TV على واتساب!</h3>
+        <p>⚠️ بسبب إغـ ـلاق المـ ـوقع بشكل متكرر، يُرجى الاشتراك في القناة حتى تصلك روابط المباريات الجديدة مباشرة على هاتفك عند أي تحديث. 🔥</p>
+      </div>
+    </div>
+    <a href="https://whatsapp.com/channel/0029VbDDEUtHFxP1CpCAGH2p" target="_blank" class="wa-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="black"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      اشترك الآن
+    </a>
+  </div>
+
+  <div class="player-chat-row">
+    <!-- فيديو -->
+    <div class="video-wrapper" id="player-wrapper">
+      <div class="live-overlay" id="overlay">
+        <div class="play-icon" onclick="dismissOverlay()">
+          <svg viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+        <div class="overlay-live"><span class="overlay-live-dot"></span>بث مباشر</div>
+        <div class="overlay-hint">انقر لتشغيل البث المباشر وملء الشاشة</div>
+      </div>
+      <div id="server1" class="server-section active">
+        <iframe id="iframe-server1" src="" allowfullscreen="true" allow="autoplay; fullscreen" sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+      </div>
+      <div id="server2" class="server-section">
+        <iframe id="iframe-server2" src="" allowfullscreen="true" allow="autoplay; fullscreen" sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+      </div>
+      <div id="server3" class="server-section">
+        <iframe id="iframe-server3" src="" allowfullscreen="true" allow="autoplay; fullscreen" sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+      </div>
+    </div>
+
+    <!-- فيديو توضيحي -->
+    <div class="tutorial-sidebar">
+      <div class="tutorial-header">
+        <span>🎬</span>
+        <span class="title">كيف تستخدم الموقع</span>
+      </div>
+      <div class="tutorial-video-wrap">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          style="width:100%;height:100%;display:block;background:#000;"
+        >
+          <source src="https://archive.or/download/0628-2_202607/0628(2).mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">جدول  كورة تيفي  | koora TV</div>
+</div>
+
+<!-- ربط ملف JavaScript -->
+<script src="match.js"></script>
+</body>
+</html>
