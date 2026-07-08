@@ -34,14 +34,15 @@
 const CONFIG = {
   matchTitle: "⚽ بث مباشر للمباراة",
   topLinks: {
-    link1: { text: "البث الرئيسي", url: "https://kooratv-1.vercel.app" },
-    link2: { text: "koora TV", url: "https://kooratv-1.vercel.app" }
+    link1: { text: "البث الرئيسي", url: "https://koora-tv1.vercel.app" },
+    link2: { text: "koora TV", url: "https://koora-tv1.vercel.app" }
   },
   servers: {
-    server1: "https://az.veloqia.online/albaplayer/fluxion/?serv=0",
+    server1: "https://koracity-live.com/live/bein555.php",
     server2: "https://koracity-live.com/live/bein1.php",
-    server3: "https://koracity-live.com/live/bein444.php"
-  }
+    server3: "https://koracity-live.com/live/bein444.php",
+    server4: "https://az.veloqia.online/albaplayer/fluxion/?serv=0",
+}
 };
 
 let currentServerNum = 1;
