@@ -40,9 +40,9 @@ const CONFIG = {
   servers: {
     server1: "https://az.veloqia.online/albaplayer/fluxion/?serv=0",
     server2: "https://koracity-live.com/live/bein1.php",
-    server3: "https://koracity-live.com/live/bein4.php",
+    server3: "https://koracity-live.com/live/bein7.php",
     server4: "https://koracity-live.com/live/bein8.php",
-    server5: "https://koracity-live.com/live/bein7.php"
+    server5: "https://koracity-live.com/live/bein44.php"
 }
 };
 
