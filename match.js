@@ -39,7 +39,7 @@ const CONFIG = {
   },
   servers: {
     server1: "https://jack07eo.mpcourageny9i9zzipper.my/fr/football/fifa-world-cup-4374248/spain-vs-belgium.html?icg=TUE",
-    server2: "https://me.hosseto.online/albaplayer/socket/?serv=1",
+    server2: "https://me.hosseto.online/albaplayer/socket/?serv=2",
     server3: "https://koracity-live.com/live/bein7.php",
     server4: "https://koracity-live.com/live/bein8.php",
     server5: "https://koracity-live.com/live/bein44.php"
