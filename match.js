@@ -38,9 +38,9 @@ const CONFIG = {
     link2: { text: "koora TV", url: "https://koora-tv1.vercel.app" }
   },
   servers: {
-    server1: "https://jack07eo.mpcourageny9i9zzipper.my/fr/football/fifa-world-cup-4374248/spain-vs-belgium.html?icg=TUE",
-    server2: "https://me.hosseto.online/albaplayer/socket/?serv=2",
-    server3: "https://koracity-live.com/live/bein7.php",
+    server1: "https://go.pkju.online/albaplayer/max1/",
+    server2: "https://s2.ben-salah.online/albaplayer/b2/",
+    server3: "https://go.pkju.online/albaplayer/max1/?serv=2",
     server4: "https://koracity-live.com/live/bein8.php",
     server5: "https://koracity-live.com/live/bein44.php"
 }
