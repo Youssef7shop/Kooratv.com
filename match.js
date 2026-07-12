@@ -39,7 +39,7 @@ const CONFIG = {
   },
   servers: {
     server1: "https://go.pkju.online/albaplayer/max1/",
-    server2: "https://s2.ben-salah.online/albaplayer/b2/",
+    server2: "https://24.1yalla-shoot.space/albaplayer/live2/?serv=1",
     server3: "https://go.pkju.online/albaplayer/max1/?serv=3",
     server4: "https://b.depoooo.com/albaplayer/bein-1/?serv=1",
     server5: "https://k.allkora.com/albaplayer/p-1/?serv=1"
