@@ -41,8 +41,8 @@ const CONFIG = {
     server1: "https://go.pkju.online/albaplayer/max1/",
     server2: "https://s2.ben-salah.online/albaplayer/b2/",
     server3: "https://go.pkju.online/albaplayer/max1/?serv=3",
-    server4: "https://go.pkju.online/albaplayer/max1/?serv=8",
-    server5: "https://koracity-live.com/live/bein44.php"
+    server4: "https://b.depoooo.com/albaplayer/bein-1/",
+    server5: "https://b.depoooo.com/albaplayer/bein-2/"
 }
 };
 
